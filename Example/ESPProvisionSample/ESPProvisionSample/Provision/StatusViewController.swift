@@ -36,11 +36,14 @@ class StatusViewController: UIViewController {
     @IBOutlet var step2ErrorLabel: UILabel!
     @IBOutlet var finalStatusLabel: UILabel!
     @IBOutlet var okayButton: UIButton!
+    @IBOutlet var regButton: UIButton!
 
     // MARK: - Overriden Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        regButton.isHidden = true
+        okayButton.isHidden = true
         if step1Failed {
             step1FailedWithMessage(message: message)
         } else {
@@ -58,6 +61,17 @@ class StatusViewController: UIViewController {
     @IBAction func goToFirstView(_: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
+    
+    @IBAction func goToRegistrationPage(_: Any) {
+        let path = "https://tetradsensors.com/index.php/registration?deviceID="
+        UIApplication.shared.open(URL(string: path + espDevice.name)!)
+    }
+    
+//    @IBAction func goToRegistration(_: Any) {
+//        let registrationVC = self.storyboard?.instantiateViewController(withIdentifier: "registrationVC") as! RegistrationViewController
+//        registrationVC.espDevice = self.espDevice
+//        self.navigationController?.pushViewController(registrationVC, animated: true)
+//    }
     
     // MARK: - Provisioning
     
@@ -110,7 +124,7 @@ class StatusViewController: UIViewController {
             self.step1Image.isHidden = false
             self.step1ErrorLabel.text = message
             self.step1ErrorLabel.isHidden = false
-            self.provisionFinsihedWithStatus(message: "Reboot your board and try again.")
+            self.provisionFinsihedWithStatus(message: "Reboot your device by cycling the power and try again.")
         }
     }
 
@@ -130,11 +144,16 @@ class StatusViewController: UIViewController {
             }
             self.step2ErrorLabel.text = errorMessage
             self.step2ErrorLabel.isHidden = false
-            self.provisionFinsihedWithStatus(message: "Reset your board to factory defaults and retry.")
+            self.provisionFinsihedWithStatus(message: "Reboot your device by cycling the power and try again.")
         }
     }
 
     func provisionFinsihedWithStatus(message: String) {
+        
+        regButton.isHidden = false
+        regButton.isEnabled = true
+        regButton.alpha = 1.0
+        okayButton.isHidden = false
         okayButton.isEnabled = true
         okayButton.alpha = 1.0
         finalStatusLabel.text = message

@@ -39,11 +39,11 @@ class ViewController: UIViewController {
         }
         switch Utility.shared.espAppSettings.deviceType {
         case .both:
-            centerImage.image = UIImage(named: "main_logo")
+            centerImage.image = UIImage(named: "tetrad-grayscale")
         case .ble:
-            centerImage.image = UIImage(named: "ble_main_logo")
+            centerImage.image = UIImage(named: "tetrad-grayscale")
         case .softAp:
-            centerImage.image = UIImage(named: "softap_main_logo")
+            centerImage.image = UIImage(named: "tetrad-grayscale")
         }
     
     }

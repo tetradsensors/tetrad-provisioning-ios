@@ -32,7 +32,9 @@ class BLELandingViewController: UIViewController, UITableViewDelegate, UITableVi
     var delegate: BLEStatusProtocol?
     var bleConnectTimer = Timer()
     var bleDeviceConnected = false
+    var espDevice: ESPDevice!
     var bleDevices:[ESPDevice]?
+    var capabilities: [String]?
     var pop = ""
 
     @IBOutlet var tableview: UITableView!
@@ -125,6 +127,26 @@ class BLELandingViewController: UIViewController, UITableViewDelegate, UITableVi
     
     // MARK: - Helper Methods
     
+    func handlePop(device: ESPDevice) {
+        pop = "abcd1234"
+        Utility.showLoader(message: "Connecting to device", view: view)
+        device.security = Utility.shared.espAppSettings.securityMode
+        device.connect(delegate: self) { status in
+            DispatchQueue.main.async {
+                Utility.hideLoader(view: self.view)
+                switch status {
+                case .connected:
+                    self.goToProvision(device: device)
+                case let .failedToConnect(error):
+                    self.showStatusScreen(error: error)
+                default:
+                    let action = UIAlertAction(title: "Retry", style: .default, handler: nil)
+                    self.showAlert(error: "Device disconnected", action: action)
+                }
+            }
+        }
+    }
+    
     func goToClaimVC(device: ESPDevice) {
         let claimVC = storyboard?.instantiateViewController(withIdentifier: "claimVC") as! ClaimViewController
         claimVC.espDevice = device
@@ -152,6 +174,12 @@ class BLELandingViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
+    func showAlert(error: String, action: UIAlertAction) {
+        let alertController = UIAlertController(title: "Error!", message: error, preferredStyle: .alert)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     // MARK: - UITableView
     
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
@@ -177,7 +205,20 @@ class BLELandingViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         Utility.showLoader(message: "Connecting to device", view: self.view)
-        self.goToClaimVC(device: self.bleDevices![indexPath.row])
+        handlePop(device: self.bleDevices![indexPath.row])
+//        self.goToClaimVC(device: self.bleDevices![indexPath.row])
+//        self.goToProvision(device: self.bleDevices![indexPath.row])
+    }
+    
+    // MARK: - Navigation
+    
+    func showStatusScreen(error: ESPSessionError) {
+            let statusVC = self.storyboard?.instantiateViewController(withIdentifier: "statusVC") as! StatusViewController
+            statusVC.espDevice = self.espDevice
+            statusVC.step1Failed = true
+            statusVC.message = error.description
+            self.navigationController?.pushViewController(statusVC, animated: true)
+
     }
     
 }
@@ -186,5 +227,11 @@ extension BLELandingViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_: UITextField) -> Bool {
         view.endEditing(true)
         return false
+    }
+}
+
+extension BLELandingViewController: ESPDeviceConnectionDelegate {
+    func getProofOfPossesion(forDevice _: ESPDevice) -> String? {
+        return pop
     }
 }

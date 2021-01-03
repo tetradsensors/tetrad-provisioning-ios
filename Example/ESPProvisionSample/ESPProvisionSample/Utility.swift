@@ -42,12 +42,12 @@ class Utility {
     /// Member to access singleton object of class.
     static let shared = Utility()
     
-    var deviceNamePrefix = UserDefaults.standard.value(forKey: "com.espressif.prefix") as? String ?? (Bundle.main.infoDictionary?["BLEDeviceNamePrefix"] as? String ?? "PROV_")
+    var deviceNamePrefix = UserDefaults.standard.value(forKey: "com.espressif.prefix") as? String ?? (Bundle.main.infoDictionary?["BLEDeviceNamePrefix"] as? String ?? "AIRU_")
     var espAppSettings:ESPAppSettings
     
     
     init() {
-        espAppSettings = ESPAppSettings(appAllowsQrCodeScan: true, appSettingsEnabled: true, deviceType: .both, securityMode: .secure, allowPrefixSearch: true)
+        espAppSettings = ESPAppSettings(appAllowsQrCodeScan: false, appSettingsEnabled: false, deviceType: .ble, securityMode: .unsecure, allowPrefixSearch: true)
         if let json = UserDefaults.standard.value(forKey: "com.espressif.example") as? [String: Any] {
             espAppSettings.allowPrefixSearch = json["allowPrefixSearch"] as! Bool
             espAppSettings.appAllowsQrCodeScan = json["allowQrCodeScan"] as! Bool
