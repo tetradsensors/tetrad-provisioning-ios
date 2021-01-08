@@ -128,7 +128,7 @@ class BLELandingViewController: UIViewController, UITableViewDelegate, UITableVi
     // MARK: - Helper Methods
     
     func handlePop(device: ESPDevice) {
-        pop = "abcd1234"
+        pop = "neb3q5ik"
         Utility.showLoader(message: "Connecting to device", view: view)
         device.security = Utility.shared.espAppSettings.securityMode
         device.connect(delegate: self) { status in
