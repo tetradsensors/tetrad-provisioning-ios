@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeC-rF-a1H">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,22 +11,22 @@
         <!--View Controller-->
         <scene sceneID="s3E-BJ-1Im">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a8E-qi-toN" customClass="ViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a8E-qi-toN" customClass="ViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6s-IO-ixO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEE-pZ-ccE">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tetrad Connect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-B8-af7">
-                                        <rect key="frame" x="101.5" y="24.5" width="117" height="22.5"/>
+                                        <rect key="frame" x="129" y="35" width="117" height="22.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5R-RF-lSK">
-                                        <rect key="frame" x="10" y="7" width="46" height="46"/>
+                                        <rect key="frame" x="10" y="17.5" width="46" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="2N3-n4-JqM"/>
                                             <constraint firstAttribute="height" constant="46" id="Oy2-mD-cs2"/>
@@ -56,7 +56,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BX-qF-Rdw">
-                                <rect key="frame" x="32" y="373" width="256" height="56"/>
+                                <rect key="frame" x="32" y="472" width="311" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Icr-3Y-1hy"/>
@@ -82,19 +82,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Tetrad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euc-NU-UUz">
-                                <rect key="frame" x="107.5" y="479" width="105.5" height="14.5"/>
+                                <rect key="frame" x="135" y="578" width="105.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version - v1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu4-4h-pTw">
-                                <rect key="frame" x="108.5" y="497.5" width="103.5" height="14.5"/>
+                                <rect key="frame" x="136" y="596.5" width="103.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tetrad-grayscale" translatesAutoresizingMaskIntoConstraints="NO" id="kaE-wx-N7C">
-                                <rect key="frame" x="60" y="134" width="200" height="200"/>
+                                <rect key="frame" x="87.5" y="183.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="FsQ-nl-bl7"/>
                                     <constraint firstAttribute="height" constant="200" id="L3e-9d-ACN"/>
@@ -127,6 +127,7 @@
                     <connections>
                         <outlet property="appVersionLabel" destination="fu4-4h-pTw" id="DZP-lX-viK"/>
                         <outlet property="centerImage" destination="kaE-wx-N7C" id="ZGv-cI-haH"/>
+                        <outlet property="provisionDeviceButton" destination="1BX-qF-Rdw" id="cxo-O5-Wxb"/>
                         <outlet property="settingsButton" destination="A5R-RF-lSK" id="Cjz-pZ-7b6"/>
                     </connections>
                 </viewController>
@@ -140,7 +141,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="jeC-rF-a1H" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jZn-GT-jnS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,32 +155,32 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="a8E-qi-toN" kind="relationship" relationship="rootViewController" id="71I-cx-ozX"/>
+                        <segue destination="roG-zI-w21" kind="relationship" relationship="rootViewController" id="baM-bz-VMU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmh-uI-7gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1208" y="-462"/>
+            <point key="canvasLocation" x="-1654" y="-1167"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="CHm-kY-doK">
             <objects>
                 <viewController id="5a4-ho-9Gc" customClass="SettingsViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="chZ-H6-8Yx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWV-iF-Px5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1o-jJ-fbd">
-                                        <rect key="frame" x="128.5" y="27.5" width="63.5" height="19.5"/>
+                                        <rect key="frame" x="156" y="38" width="63.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkQ-s9-Bhx">
-                                        <rect key="frame" x="16" y="12" width="50" height="50"/>
+                                        <rect key="frame" x="16" y="22.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dvp-Lt-S9t"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="fYQ-ON-tMP"/>
@@ -209,13 +210,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provisioning settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8O-0m-UiG">
-                                <rect key="frame" x="20" y="81" width="158" height="21"/>
+                                <rect key="frame" x="20" y="91.5" width="158" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRR-KJ-SWs">
-                                <rect key="frame" x="0.0" y="118" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="128.5" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supported Device Types" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uiw-XV-6Mi">
                                         <rect key="frame" x="20" y="8" width="197.5" height="21"/>
@@ -230,7 +231,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r3-iU-fjt">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <connections>
                                             <action selector="showPickerView:" destination="5a4-ho-9Gc" eventType="touchUpInside" id="1UK-zF-2SX"/>
                                         </connections>
@@ -250,7 +251,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="po4-x0-fRu">
-                                <rect key="frame" x="0.0" y="186" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="196.5" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted Communication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scl-e5-9o1">
                                         <rect key="frame" x="20" y="8" width="213" height="21"/>
@@ -265,7 +266,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTb-Qe-LTZ">
-                                        <rect key="frame" x="251" y="14.5" width="51" height="31"/>
+                                        <rect key="frame" x="306" y="14.5" width="51" height="31"/>
                                         <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="togglePressed:" destination="5a4-ho-9Gc" eventType="valueChanged" id="hrK-Vd-fzk"/>
@@ -284,7 +285,7 @@
                                 </constraints>
                             </view>
                             <pickerView hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Ipi-ln-Oja">
-                                <rect key="frame" x="0.0" y="208" width="320" height="150"/>
+                                <rect key="frame" x="0.0" y="218.5" width="375" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="ZdA-ow-BKx"/>
@@ -295,7 +296,7 @@
                                 </connections>
                             </pickerView>
                             <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-jv-V2l">
-                                <rect key="frame" x="0.0" y="178" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="188.5" width="375" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="B7O-0Z-TQq"/>
                                 </constraints>
@@ -357,20 +358,20 @@
             <objects>
                 <viewController storyboardIdentifier="scannerVC" modalPresentationStyle="fullScreen" id="5il-br-8UP" customClass="ScannerViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9TR-sb-7yw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVi-zX-G91">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Device" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26o-b2-ZoT">
-                                        <rect key="frame" x="117" y="27.5" width="86" height="19.5"/>
+                                        <rect key="frame" x="144.5" y="38" width="86" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ben-mg-NZB">
-                                        <rect key="frame" x="244" y="17" width="60" height="40"/>
+                                        <rect key="frame" x="299" y="27.5" width="60" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="HmM-dq-pkj"/>
                                             <constraint firstAttribute="width" constant="60" id="eqK-ly-P6H"/>
@@ -402,11 +403,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0d-HU-IZs">
-                                <rect key="frame" x="0.0" y="61" width="320" height="255.5"/>
+                                <rect key="frame" x="0.0" y="71.5" width="375" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ns-0A-dml">
-                                <rect key="frame" x="32" y="462" width="256" height="56"/>
+                                <rect key="frame" x="32" y="561" width="311" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="6Z2-sI-nFh"/>
@@ -435,13 +436,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking for QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcS-SQ-nzR">
-                                <rect key="frame" x="30" y="346.5" width="189" height="24"/>
+                                <rect key="frame" x="30" y="401.5" width="189" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please position the camera to point at the QR Code." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWT-9h-wgg">
-                                <rect key="frame" x="30" y="386.5" width="258" height="43"/>
+                                <rect key="frame" x="30" y="441.5" width="313" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -486,11 +487,11 @@
             <objects>
                 <viewController storyboardIdentifier="provision" title="Provision" id="4Lu-aA-lsb" customClass="ProvisionViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOu-J1-idi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEq-XD-snE">
-                                <rect key="frame" x="48" y="418" width="224" height="50"/>
+                                <rect key="frame" x="56.5" y="517" width="262.5" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ar2-Ql-aEL"/>
@@ -508,7 +509,7 @@
                                 </connections>
                             </button>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Network Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmg-ps-y5A">
-                                <rect key="frame" x="48" y="129" width="224" height="50"/>
+                                <rect key="frame" x="56.5" y="139.5" width="262.5" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rS5-Ww-Y6U"/>
                                 </constraints>
@@ -516,7 +517,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" textContentType="name"/>
                             </textField>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passphrase" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-dh-Wkl">
-                                <rect key="frame" x="48" y="211" width="224" height="50"/>
+                                <rect key="frame" x="56.5" y="221.5" width="262.5" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3uH-VD-6ul"/>
                                 </constraints>
@@ -524,31 +525,31 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AYC-Cg-AYB">
-                                <rect key="frame" x="0.0" y="204.5" width="320" height="363.5"/>
+                                <rect key="frame" x="0.0" y="215" width="375" height="452"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wifiListCell" rowHeight="60" id="lqj-V1-gYr" customClass="WifiListTableViewCell" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lqj-V1-gYr" id="kr4-7i-cuk">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCq-Zl-bQb">
-                                                    <rect key="frame" x="15" y="18.5" width="213" height="23"/>
+                                                    <rect key="frame" x="15" y="18.5" width="268" height="23"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="0.89552119009999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_symbol_weak" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-sL-RVc">
-                                                    <rect key="frame" x="270" y="19" width="30" height="22.5"/>
+                                                    <rect key="frame" x="325" y="19" width="30" height="22.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="2N8-Rp-WX8"/>
                                                         <constraint firstAttribute="width" secondItem="hvs-sL-RVc" secondAttribute="height" multiplier="4:3" id="MdF-DD-hoV"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LMw-rl-Ubd">
-                                                    <rect key="frame" x="238" y="22.5" width="20" height="15"/>
+                                                    <rect key="frame" x="293" y="22.5" width="20" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="LMw-rl-Ubd" secondAttribute="height" multiplier="4:3" id="NGd-9l-3r4"/>
                                                         <constraint firstAttribute="width" constant="20" id="soY-7z-Iap"/>
@@ -580,16 +581,16 @@
                                 </connections>
                             </tableView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA4-tD-eia">
-                                <rect key="frame" x="0.0" y="154.5" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="165" width="375" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9v-uY-CXo">
-                                        <rect key="frame" x="16" y="4.5" width="288" height="21"/>
+                                        <rect key="frame" x="16" y="4.5" width="343" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-MZ-kex">
-                                        <rect key="frame" x="275" y="2.5" width="25" height="25"/>
+                                        <rect key="frame" x="330" y="2.5" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Fs8-TF-66V"/>
                                             <constraint firstAttribute="width" constant="25" id="vfb-YU-2Bk"/>
@@ -611,16 +612,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGn-R5-03L">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Wi-Fi Network" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-Ug-a5a">
-                                        <rect key="frame" x="84" y="27.5" width="152" height="19.5"/>
+                                        <rect key="frame" x="107.5" y="38" width="160" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNR-c8-8uE">
-                                        <rect key="frame" x="244" y="5" width="60" height="40"/>
+                                        <rect key="frame" x="299" y="15.5" width="60" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="OSc-Vi-R6P"/>
                                             <constraint firstAttribute="height" constant="40" id="hxT-Zx-JF2"/>
@@ -653,7 +654,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To continue setup of your device, please provide your Home Network's credential." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yS-Tz-jbz">
-                                <rect key="frame" x="40" y="77" width="240" height="57.5"/>
+                                <rect key="frame" x="40" y="87.5" width="295" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -712,14 +713,14 @@
             <objects>
                 <viewController storyboardIdentifier="statusVC" id="cAR-u1-wn5" customClass="StatusViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mq9-Hp-le2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-yx-zMm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provisioning" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsp-jo-zFx">
-                                        <rect key="frame" x="113.5" y="27.5" width="93.5" height="19.5"/>
+                                        <rect key="frame" x="141" y="38" width="93.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -741,67 +742,67 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-Lb-R4N">
-                                <rect key="frame" x="32.5" y="172.5" width="24" height="24"/>
+                                <rect key="frame" x="60" y="173" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="BFA-TJ-wyr"/>
                                     <constraint firstAttribute="height" constant="24" id="GIA-ag-Vft"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="2zt-hW-lEz">
-                                <rect key="frame" x="32.5" y="236.5" width="24" height="24"/>
+                                <rect key="frame" x="60" y="237" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="fh6-XM-U4y"/>
                                     <constraint firstAttribute="width" constant="24" id="n8B-UU-ruu"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending Wi-Fi credentials." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cn5-HL-C9P">
-                                <rect key="frame" x="64.5" y="174.5" width="191" height="19.5"/>
+                                <rect key="frame" x="92" y="175" width="191" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirming Wi-Fi connection." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AJ-vF-C5u">
-                                <rect key="frame" x="64.5" y="238.5" width="212.5" height="19.5"/>
+                                <rect key="frame" x="92" y="239" width="212.5" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dzx-4j-j7A">
-                                <rect key="frame" x="110" y="24.5" width="100" height="90"/>
+                                <rect key="frame" x="137.5" y="25" width="100" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Cwq-HW-xBt"/>
                                     <constraint firstAttribute="width" constant="100" id="yTj-SA-mlM"/>
                                 </constraints>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-st-x3n">
-                                <rect key="frame" x="32.5" y="172.5" width="24" height="24"/>
+                                <rect key="frame" x="60" y="173" width="24" height="24"/>
                             </activityIndicatorView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="57J-aO-mYb">
-                                <rect key="frame" x="32.5" y="236.5" width="24" height="24"/>
+                                <rect key="frame" x="60" y="237" width="24" height="24"/>
                             </activityIndicatorView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passphrase Invalid" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8d-te-wRY">
-                                <rect key="frame" x="64.5" y="200" width="239.5" height="14.5"/>
+                                <rect key="frame" x="92" y="200.5" width="267" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="0.32156862749999998" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passphrase Invalid" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1c-5G-PGW">
-                                <rect key="frame" x="64.5" y="264" width="239.5" height="14.5"/>
+                                <rect key="frame" x="92" y="264.5" width="267" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="0.32156862749999998" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection failed. Please verify your information and try again.   Troubleshooting Help" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nl-j4-mR9">
-                                <rect key="frame" x="-44.5" y="338.5" width="409" height="51"/>
+                                <rect key="frame" x="-17" y="339" width="409" height="50.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-BQ-h1U">
-                                <rect key="frame" x="10" y="435" width="300" height="117"/>
+                                <rect key="frame" x="10" y="435" width="355" height="117"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oem-f8-Wer">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="56"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="Jnh-A4-Mmh"/>
@@ -827,7 +828,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDO-ph-Sdr">
-                                        <rect key="frame" x="0.0" y="61" width="300" height="56"/>
+                                        <rect key="frame" x="0.0" y="61" width="355" height="56"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="AV1-Lp-mOZ"/>
@@ -913,65 +914,181 @@
             </objects>
             <point key="canvasLocation" x="2528" y="-463"/>
         </scene>
-        <!--Registration View Controller-->
+        <!--EULA View Controller-->
         <scene sceneID="69Y-DO-CFb">
             <objects>
-                <viewController storyboardIdentifier="registrationVC" id="roG-zI-w21" customClass="RegistrationViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="eulaVC" id="roG-zI-w21" userLabel="EULA View Controller" customClass="EULAViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NeQ-Pu-lxg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="Registration Page" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c15-wP-MK4">
-                                <rect key="frame" x="40" y="326" width="240" height="235"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" link="YES"/>
-                                </accessibility>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To create an account and register your device, please click the link below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCx-Ay-XHC" userLabel="Registration Text Label">
-                                <rect key="frame" x="16" y="165" width="288" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="fG4-dP-0LC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-ch-GMD">
+                                <rect key="frame" x="67" y="9" width="240" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JJx-c6-Njc">
+                                <rect key="frame" x="24" y="61" width="327" height="443"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Terms Of Use And Conditions
+(Updated as of January 9, 2020)
+THE FOLLOWING AGREEMENT BETWEEN YOU AND TETRAD: SENSOR NETWORK SOLUTIONS, LLC COVERS THE TERMS OF USE AND CONDITIONS FOR THE TETRAD: SENSOR NETWORK SOLUTIONS, LLC PRODUCT, SOFTWARE, APPLICATION, AND WEBSITE(S) (COLLECTIVELY KNOWN AS THE “SERVICES”). IN ORDER TO DEFINE THE RELATIONSHIP BETWEEN YOU AND TETRAD: SENSOR NETWORK SOLUTIONS, LLC AND ITS SERVICES, IT IS IMPORTANT FOR YOU TO READ AND UNDERSTAND THE FOLLOWING TERMS. BY CLICKING “AGREE” YOU ELECTRONICALLY CONSENT THAT THESE TERMS APPLY TO YOU WHEN ACCESSING OR USING THE SERVICES.
+Tetrad: Sensor Network Solutions, LLC (“Tetrad”) provides the following Services, which permit you to utilize certain Internet services and make this content available on your compatible devices and computers, only as defined by the terms of this Agreement. Specifically, the Services directly refer to the Tetrad website(s) (“Site”) including but not limited to www.tetradsensors.com, www.tetrad-sensors.com and any related family of websites. This Site in its entirety is owned by Tetrad: Sensor Network Solutions, LLC. Reference to the terms “Tetrad”, “us”, the “Company” and “we” collectively refer to all the corporate embodiments and affiliations owned by Tetrad.
+SERVICE DESCRIPTION
+The Service is a platform where users may elect to obtain air quality information and monitoring via sensors sold by Tetrad (referred to as “AirU” and described below). AirU purchasers and visitors to this Site are collectively referred to as "users" in these Terms.
+1. SERVICE USE REQUIREMENTS.
+A. Age Restrictions. The Services provided by Tetrad are only available to individuals 18 years or older. By using the Service and/or Product(s), you agree that you are of legal age to form a binding contract with Tetrad, or that if you are registering on behalf of an entity, that you are authorized to enter into, and bind the entity to, these Terms and register for the Service and/or Product(s). The Service and/or Product(s) are not available to individuals under the age of 18 (“Minor”) unless a parent and/or legal guardian has consented on behalf of said Minor. A consenting parent and/or legal guardian also warrants and represents that they assume all risk(s) and liabilities on behalf of the Minor’s engagement with the Product(s) and related Services.
+B. Use Limitations. You agree to use the Services for purposes only permitted by this Agreement, and to the extent permitted only by applicable law or regulations.
+C. User Accounts and Devices. Tetrad reserves the right to limit the number of accounts created from a particular device and the numbers of devices associated with a user account.
+D. Service Availability. Tetrad’s services and its related features may not be available in all languages and/or all countries. Given this possibility, Tetrad makes no representation that its services and related features are appropriate or available for use in any specific location. In your election to use and access the services, you do so upon your own initiative and compliance with local laws.
+E. Changes to Services. Tetrad reserves the right to change, modify, or adjust the terms of this Agreement in its sole discretion and at any time. Tetrad will make best efforts to communicate such changes, modifications, and/or adjustments to the Agreement terms to you. Continued use of the services after changes, modifications, and/or adjustments to this Agreement constitutes your consent to the revised terms. If you do not agree to Tetrad’s changes, modifications, and/or adjustments to the terms of this Agreement then you can promptly terminate the services.
+2. SERVICE FEATURES
+A. Location Based Information. In order to offer best-in-class services, Tetrad and its partners and/or licensors may provide features or services that rely upon location based data as derived from the AirU Sensors (“AirUs”). These provided features or services require Tetrad and its partners and/or licensors to collect, use, transmit, maintain and process your location data.
+You may elect to withdraw consent from Tetrad and its partners and/or licensors by unplugging your AirU.
+B. Backup. As part of its current backup protocol, Tetrad creates regular backups for user data and content. However, even with reasonable skill and careful backup measures Tetrad DOES NOT GUARANTEE OR WARRANT THAT ANY CONTENT YOU MAY STORE, ACCESS, OR DISSEMINATE THROUGH OUR SERVICES WILL NOT BE SUBJECT TO DAMAGE, CORRUPTION, LOSS, OR REMOVAL IN ACCORDANCE WITH THE TERMS OF THIS AGREEMENT. AS SUCH, Tetrad WILL NOT BE RESPONSIBLE FOR INSTANCES OF DAMAGE, LOSS, CORRUPTION OR REMOVAL OF YOUR CONTENT. You acknowledge and agree that you are responsible to maintain proper backup measures for your content and related data.
+3. TETRAD USE OF SERVICES
+A. Account Registration. You may browse the Site without registering, but in order to enjoy the Tetrad services, you must become a registered user by establishing a valid Account. You agree and acknowledge that you will take precautionary measures to secure your Account and its confidentiality. In the event your confidentiality measures are breached or compromised, you agree to notify Tetrad immediately. Although Tetrad will exercise reasonable care with respect to our security protocols, Tetrad is not personally responsible for losses that may arise from the unauthorized use of your Account.
+You agree to use the log in authentication process as defined by Tetrad. You agree to refrain from using a username that is the name of another person other than you or selecting a username that is not lawfully available to use, or violates any trademark or copyright. Usernames that are vulgar, obscene, or offensive will violate the terms of this Agreement and result in Account termination.
+1. AirU Map Feature. When using the Service and specifically the AirU, you acknowledge and agree that any sensor generated data (in its entirety) is owned exclusively by Tetrad and that Tetrad grants you a non-exclusive, royalty-free license to use Service features including the AirU Map. In order to use the AirU Map, we may require integration with third party providers and you consent to this integration as a condition to use the Service.
+2. Receiving Invitations. Existing AirU Users may invite you to join the service via email, SMS/text message or other ways. Tetrad may help members extend these invitations (which may include reminders) by requesting access to the User’s email or other contacts or asking the inviting member to provide the invited person’s email. If you aren’t a member, you can opt-out of future email invitations or reminders or ask us to amend or delete any personal information about you, by contacting us using this email contact@tetradsensors.com
+3. Third Party Registration (e.g. Google). If you register your AirU sensor using your Google account or another third-party service, we automatically request your email address and publicly available information, including your account ID, name and gender as well as public information for authentication purposes. For example, if you revisit Tetrad while logged into one of these third-party services, we’ll automatically log you into your AirU account. In turn, if you don’t register for AirU via Google but later attempt to log into AirU using your Google credentials, we’ll connect your Google and AirU accounts and request the necessary information as if you were newly registering. Information gathered by any third-party service in connection with your use of their products, features, and services are governed by each service’s specific data policy.
+4. Communications and Notifications. By registering an account with us, you acknowledge and agree to receive communications from us including but not limited to emails, direct messages, and/or push notifications. In the event you wish to not receive these communications and/or notifications you may contact us at contact@tetradsensors.com
+B. PRODUCTS. 
+1. AirU sensors. In order to use the Services in their entirety, it may be necessary for you to purchase an appropriate AirU sensor. We solely determine what AirU Product(s) will be sold through our Site as well as all pricing discounts, offers, incentives, coupons and coupon codes that we may offer from time to time. For every order you place, you are (i) offering to purchase a product, (ii) representing that you are of legal age to enter and execute a legally binding contract in the United States, and (iii) representing that all information you provide to us in connection with such order is true and accurate including the method of payment(s) and payment instrument. The receipt by you of an order confirmation does not constitute a formal acceptance by Tetrad. We retain the right to refuse any request to purchase made by you for any reason whatsoever.
+Prior to Tetrad accepting any order, we have the right to verify any information you send to us. Tetrad reserves the right at any time after receipt of your order to accept or decline your order, or any portion thereof, even after your receipt of an order confirmation from us. In its sole discretion, Tetrad reserves the right to limit the number of items ordered and to refuse service to you without prior notification. In the event that an item lists an incorrect price, either due to typographical or other error, Tetrad shall have the right to refuse or cancel any such order placed for the incorrect price, regardless of whether the order is being or has been processed. If payment has already been made or if your account has already been charged for the purchase and the order is cancelled, Tetrad shall credit your account in the amount of the incorrect price.
+We make every effort possible to display as accurately as possible the colors of our products that appear on the website; however, the actual color you will see will depend on many factors, including your computer, and we cannot guarantee that your computer will accurately display our colors. Products are available while supplies last. All prices and products advertised are subject to change. All prices displayed on the Services are quoted in U.S. dollars.
+THE RISK OF LOSS AND TITLE FOR PRODUCT(S) PURCHASED BY YOU PASS TO YOU UPON OUR DELIVERY OF THE PRODUCT(S) TO THE CARRIER.
+In the event you desire to return a product(s), you have fifteen (15) days from receipt of delivery to return the product(s) to us.
+2. Product Payment. For its online orders, Tetrad uses Square, Inc. ("Square") and Wave Financial Inc. (Wave) as its third party electronic payment processing providers for payment services (e.g. card acceptance, merchant settlement, and related services) ("Payment Services") for payments related to the Service. By making use of some or all of these Payment Services on the Service, you agree to be bound by the providers terms and conditions  as well as its privacy policy and hereby consent and authorize us to delegate the authorizations and share the information you provide to us with our third party electronic payment processing provider(s) to the extent required to provide the Payment Services to you.
+Square terms and conditions available at https://squareup.com/us/en/legal/general/ua
+Wave terms and conditions available at and https://www.waveapps.com/legal/terms-of-use
+Square privacy policy available at https://squareup.com/us/en/legal/general/privacyl
+Wave privacy policy availavle at https://www.waveapps.com/legal/privacy-policy
+3. Service Subscription(s). Presently, use of the Service is free with the exception of a requirement to purchase an AirU for use of upgraded Service features. However, Tetrad reserves the right in its sole discretion to modify these terms.
+C. No Survivorship Rights. Unless required by law, you agree and acknowledge that your Tetrad/AirU Account is non-transferable and any rights to your Tetrad Account or Content therein terminate upon your death. In the event of your death, a valid copy of a death certificate may permit the proper party to terminate your Account and related Content on your behalf. Contact Tetrad Support at contact@tetradsensors.com for additional assistance.
+D. No Resale of Tetrad Services. You agree and acknowledge that the Tetrad Services are proprietary and subject to intellectual property protection. Given this understanding, you agree to refrain from copying, reproducing, selling, reselling, duplicating, trading, or renting the Services (or any part or component thereof) for any purpose whatsoever.
+4. USER CONTENT AND CONDUCT.
+A. Content. For purposes of this Agreement, “Content” shall mean any information that may be encountered and/or generated via the use of our Services. This includes but is not limited to photographs, written text including comments, graphics, data files, music, videos, voice recordings, sounds, messages, and device characteristics. Given this definition and provided examples, you agree and acknowledge that you are solely responsible for the Content originated by you whether it is privately transmitted or publicly posted via our Services. You acknowledge and agree that by using our Services you may encounter Content that you may deem to be inappropriate, offensive, indecent, or objectionable. By the same token, you agree that the Content you may generate or disseminate may be objectionable to others. Due to this phenomenon, Tetrad does not control said Content no matter how it is generated or disseminated. As such, you agree that your use of our services is at your own election and resident risk.
+As a point of clarification, any data or information generated and/or transmitted from the AirU are solely the content of Tetrad and you do not own and/or have any proprietary interest in said content.
+B. User Conduct. By agreeing to the terms of this Agreement, you expressly refrain from using our Services in the manner described below to:
+1) engage in any act that would result in copyright infringement or other intellectual property infringement (including but not limited to trade secret, trade dress, or other confidentiality agreements);
+2) misrepresent your identity (including misappropriation of another’s image(s), celebrity, charitable or employment group, etc.). Tetrad reserves the right to immediately block any attempt to register a user account as well as any already registered user accounts that is a misrepresentation of identity;
+3) generate or make available Content that is unlawful, harmful, defamatory, tortious, abusive, invasive of one’s privacy, obscene (including but not limited to sexual, pornographic, or non-sexual nudity), vulgar, and/or objectionable as determined by Tetrad (including using the means described to stalk, harass, or intimidate another);
+4) request as an adult user the personal information from a minor (anyone under the age of 18 or as properly defined by local law) who is not known to you. Examples of personal information include but are not limited to minor’s home address, full name, postal code or similar identifier, phone number, photographs, school, social affiliations, etc.;
+5) upload onto the Services and transmit via any means material(s) that contain harmful viruses or programs intended to interfere or disrupt the normal function of the Services or any computer hardware or software;
+6) create or submit any unwanted email, comments, likes or other forms of commercial or harassing communications such as “spam” to any Tetrad/AirU users;
+7) use domain names or web URLs in your username without prior written consent from Tetrad;
+8) create accounts with the Services through unauthorized means, including but not limited to using automated script, bot, device, spider, scraper or crawler;
+9) engage or plan any illegal activity and/or store and collect personal information of users of the services for any prohibited activities as described in this Agreement;
+10) self promote any business enterprise or affiliation without Tetrad’s express written consent.
+C. Content Removal. Tetrad does not claim any responsibility for the Content that others may provide nor is Tetrad bound to pre-screen all Content submitted via the Services. However, Tetrad reserves the right in its sole discretion to monitor, screen, move, delete, modify and/or remove Content it determines to be in violation of this Agreement.
+D. Content Backup. Although Tetrad makes reasonable efforts to provide proper care and skill in delivering its services, Tetrad does not guarantee, warrant, or covenant that any Content you access and/or store via the services will not be accidentally lost, corrupted, or damaged. Given this reality, you agree and acknowledge that it is your sole responsibility to back up any important Content on your device(s) and/or computer(s).
+E. Access to User Account and Content. Tetrad  intends to enforce this Agreement to the full extent provided by law. As part of that process, Tetrad reserves the right to verify and enforce compliance with this Agreement by you. You expressly agree and consent to these efforts by acknowledging that Tetrad has the right without limitation to use, access, store and/or disclose your Account information and related Content to proper law enforcement authorities, government entities and/or officials, and/or proper third parties that Tetrad  believes is necessary in order to: 1) comply with a valid legal process or request; 2) prevent, detect, or identify fraud or technical issues; 3) enforce the terms of this Agreement including any necessary investigation thereof; and 4) protect the rights of Tetrad, its users, a third party(ies), or the public as permitted by law.
+F. Digital Millennium Copyright Act. Tetrad makes every reasonable effort to ensure that its users and their content conform to proper Copyright standards. If you believe that any Content that you claim Copyright to has been infringed upon by anyone using our Services, please contact our Copyright Agent at contact@tetradsensors.com
+G. Agreement Violations. In order to provide a harmonious environment for our users, Tetrad makes best efforts to remove inappropriate or objectionable Content that violates this Agreement. If you encounter inappropriate or objectionable Content while using our services, please report it to us at contact@tetradsensors.com
+H. User Submitted Content via Tetrad Services
+1. License from User to Tetrad. Tetrad does not claim ownership of the Content and/or materials you upload, submit, or disseminate via our services. However, Tetrad does claim ownership of material that we may specifically license to you under the terms of this Agreement for example any data (in its entirety) derived from the AirU. In instances whereby you upload, submit, or disseminate your Content via our services and make the Content publicly accessible or accessible to users with whom you consent to share your Content, you expressly grant Tetrad a royalty-free, non-exclusive, worldwide license to distribute, use, reproduce, adapt, modify, translate, publish, publicly display and perform such Content. This license grant from you to Tetrad is solely for the purpose by which the Content was submitted or made available without any compensation to you whatsoever.
+You acknowledge and agree that any Content in its entirety uploaded, submitted, or posted by you shall be your responsibility. Specifically, this means that you represent that you are the legal owner of this Content and have all relevant and necessary rights, licenses, and authorization to distribute it. Furthermore, you warrant and represent that said Content does not infringe upon the rights of other parties nor is the Content in violation of local law or authority.
+2. Content Changes. The Tetrad services require the ability to transmit your Content across various forms of networks and media. In order to accomplish this capability, Tetrad may need to change or modify your Content to ensure compliance with technical specifications and requirements of various networks, computers, or devices. You agree and consent to Tetrad making these necessary Content changes.
+3. Advertisement(s) and Your Submitted Content. Some of the Service is supported by advertising revenue and may display advertisements and promotions, and you hereby agree that Tetrad may place such advertising and promotions on the Service or on, about, or in conjunction with your Content. The manner, mode and extent of such advertising and promotions are subject to change without specific notice to you.
+4. Trademark(s). Tetrad and AirU and its related trademark(s), designs, logos, service marks, etc. are trademarks or registered trademarks of Tetrad in the US and abroad where applicable. Tetrad does not grant you any right or license in its trademarks and you agree to not obscure, remove, or alter the Tetrad marks contained in any portion of the services.
+5. SOFTWARE AND INTELLECTUAL PROPERTY RIGHTS
+A. Tetrad’s Proprietary Rights. As a condition to using Tetrad’s services, you acknowledge and agree that Tetrad and/or its licensors own all legal right, title, and interest to the Services. By way of example, these rights include but are not limited to the following: AirU derived data (in its entirety), Tetrad graphics, user interface, scripts and software used to implement the services, and any software that Tetrad may provide you with in connection to the services. The described rights also include any and all intellectual property rights that reside therein, whether registered or not, and wherever in the world they may exist.
+You will not reproduce, copy, transfer, give access to, distribute, sell, rent, lease, assign, sublicense, create derivative works from, decompile, reverse engineer, or disassemble the Service and/or Product(s) or any part of the Service and/or Product(s) in any manner whatsoever.
+You acknowledge and agree that nothing in these Terms conveys to you any ownership, intellectual property rights or other proprietary interest in or relating to the Service and/or Product(s) or any other Tetrad Products or services, or any modifications or derivative works of any of the foregoing. The Service(s) is/are licensed, not sold, to you and is owned by Tetrad and its licensors. Except as expressly set forth in these Terms, Tetrad reserves all right, title and interest, including all intellectual property and other rights, in and to the Service and all other Tetrad products and services. You agree not to obscure or alter or remove any patent, copyright, trademark or other proprietary notice or legend contained on or in the Service and/or Product(s).
+B. License from Tetrad. THE USE OF THE SOFTWARE AND/OR ANY PART OF THE SERVICES IS STRICTLY PROHIBITED AND INFRINGES UPON THE INTELLECTUAL PROPERTY RIGHTS OF OTHERS AND MAY SUBJECT YOU TO CIVIL AND CRIMINAL PENALTIES. THE ONLY PERMITTED USE OF THE SOFTWARE AND/OR ANY PART OF THE SERVICES IS OUTLINED ONLY IN THIS AGREEMENT.
+C. Export Control(s). The use of the services may be subject to import and export laws of the United States and other countries. You agree and acknowledge that you will comply with all import and export laws and regulation. Specifically, you warrant and represent that the services and/or related software may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the US Treasury Department’s List or Entity List. As a registered user of the services, you warrant and represent that you are not located in any such country or on any such list. This assurance and communication shall survive termination of this Agreement.
+D. Update(s). In order to ensure a proper user experience of the services, Tetrad may make regular software updates from time to time. The updates may include new software versions (including AirU software), bug fixes, and feature enhancements or improvements.
+6. TERMINATION.
+A. User Termination. You may stop using the Tetrad services at any time.
+B. Tetrad Termination. Tetrad may terminate or suspend all or a portion of your account and/or access to the services at any time and/or for any reason. Examples of typical reasons for termination include but are not limited to the following: (a) violations of this Agreement; (b) a request by you to terminate or cancel your services account; (c) a request and/or order from law enforcement or government entity; (d) unexpected technical or security issues or problems; and (e) your participation in illegal or fraudulent activities. Any account termination or suspension by Tetrad shall be made in its sole discretion and Tetrad will not be responsible to you and/or any third parties for alleged resulting damages whatsoever.
+C. Termination Effects. Termination of your services account may result in the loss to all access to the services and any account portions thereof including Content. After a period of time, as determined by Tetrad, all data and information stored via your account shall be deleted and may or may not be used, at Tetrad’s sole discretion, for analytics purposes.
+7. LINKS AND THIRD-PARTY MATERIALS
+As part of our services and its resident features and functions, you may encounter materials from third parties and/or hyperlinks to other Content, resources, or websites. Because we have no control over third parties and their related materials, you acknowledge and agree that Tetrad shall not be responsible or liable for any alleged damages you may have incurred either directly or indirectly.
+8. WARRANTIES AND LIABILITY
+A. Disclaimer of Warranties
+TO THE EXTENT PERMITTED BY LAW AND ALLOWED BY INDIVIDUAL JURISDICTIONS, TETRAD MAKES THE FOLLOWING EXCLUSIONS THAT MAY OR NOT APPLY TO YOU.
+TETRAD  DOES NOT REPRESENT, GUARANTEE, OR WARRANT THAT USE OF THE SERVICES WILL BE ERROR-FREE OR INTERRUPTED, YOU AGREE AND ACKNOWLEDGE THAT TETRAD MAY REMOVE THE SERVICES FOR UNDEFINED PERIOD OF TIMES, OR CANCEL THE SERVICES ACCORDING TO THE TERMS IN THIS AGREEMENT.
+THE SERVICES PROVIDED BY TETRAD ARE OFFERED ON AN “AS IS” AND “AS AVAILABLE” BASIS. YOU AGREE AND ACKNOWLEDGE THIS FACT. IN TURN, TETRAD AND ITS AFFILIATES, SUBSIDIARIES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, PARTNER, AND LICENSORS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+TETRAD DOES NOT GUARANTEE OR WARRANT THAT THE SERVICES WILL BE FREE FROM CORRUPTION, LOSS, VIRUSES, ATTACK, HACKING, INTERFERENCE, OR OTHER SECURITY INTRUSIONS. TETRAD  DISCLAIMS ANY RELATED LIABILITY.
+YOU AGREE AND ACKNOWLEDGE THAT YOUR DOWNLOADING OF ANY MATERIAL OBTAINED THROUGH THE SERVICES IS DONE AT YOUR OWN RISK. ANY RESULTING OR ALLEGED DAMAGES TO YOUR COMPUTER, DEVICE, OR DATA LOSS THAT RESULTS FROM SAID DOWNLOADING SHALL BE YOUR SOLE RESPONSIBILITY.
+B. Limitation of Liability
+TO THE EXTENT PERMITTED BY LAW AND ALLOWED BY INDIVIDUAL JURISDICTIONS, TETRAD MAKES THE FOLLOWING EXCLUSIONS THAT MAY OR NOT APPLY TO YOU.
+YOU EXPRESSLY UNDERSTAND AND AGREE THAT TETRAD AND ITS SUBSIDIARIES, AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, PARTNERS AND LICENSORS SHALL NOT BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSSES (EVEN IF TETRAD HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING FROM: (I) THE USE OR INABILITY TO USE THE SERVICE (II) ANY CHANGES MADE TO THE SERVICE OR ANY TEMPORARY OR PERMANENT CESSATION OF THE SERVICE OR ANY PART THEREOF; (III) THE UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA; (IV) THE DELETION OF, CORRUPTION OF, OR FAILURE TO STORE AND/OR SEND OR RECEIVE YOUR TRANSMISSIONS OR DATA ON OR THROUGH THE SERVICE; (V) STATEMENTS OR CONDUCT OF ANY THIRD PARTY ON THE SERVICE; AND (VI) ANY OTHER MATTER RELATING TO THE SERVICE.
+C. Indemnification
+As a requirement to use our services, you expressly agree to defend, indemnify, and hold Tetrad and its subsidiaries, affiliates, directors, officers, employees, agents, and licensors, harmless from any claim or demand thereof, including reasonable attorney’s fees, made by a third party, relating to or arising from: (a) any violation by you of this Agreement; (b) any Content in its entirety that you upload, transmit, or make available through the services; (c) your use of the services; (d) any violation that Tetrad determines through its reasonable investigations of a suspected violation(s) of this Agreement; or (e) your violation of another’s rights. This express waiver and indemnity provision applies to all violations described in or contemplated by this Agreement. This obligation shall survive the termination or expiration of this Agreement and/or your use of the services.
+9. GENERAL PROVISIONS
+A. Notice(s). As part of our regular update policies, Tetrad may provide you with notice regarding the Services, including changes made to this Agreement, via your email address provided to us, regular mail, or postings made to our application product.
+B. Governing Law. This Agreement between you and Tetrad shall be governed by the laws of the State of Utah, excluding its personal conflict of laws provisions.
+C. Entire Agreement. This Agreement embodies the complete agreement in its entirety between you and Tetrad. This Agreement governs your use of Tetrad services and replaces any other prior agreements between you and Tetrad in relation to the services. In the event any of this Agreement is held to be invalid or unenforceable, that specific portion shall be construed to reflect the original intentions of the parties, and the remaining portions shall remain in full force and effect. If Tetrad does not exercise or enforce any right or provision of this Agreement then that does not constitute a waiver of such right or provision. You agree that there shall be no third-party beneficiaries to this agreement.
+D. Tetrad as defined by this Agreement:
+Tetrad: Sensor Network Solutions, LLC / www.tetrad-sensors.com/ www.tetradsensors.com AirU
+630 Komas Dr., Suite 239
+Salt Lake City, UT 84108
+contact@tetradsensors.com
+E. Electronic Contracting. You acknowledge and agree that your use of the services includes your ability to enter into agreements or related transactions electronically. YOUR ELECTRONIC SUBMISSSION TO TETRAD ACKNOWLEDGES YOUR AGREEMENT AND INTENT TO BY BOUND BY THE TERMS OF THIS AGREEMENT IN ITS ENTIRETY. In order to access and store your electronic transaction records with Tetrad, you accept full responsibility for installing required hardware and software
+
+
+US Ignite Addendum
+Any AirU data generated through US ignite contract will be made publicly available under permissive license and maintain freely on a dedicated Tetrad infrastructure, to fulfill the public mission of US ignite and the NSF.
+
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B62-TT-aL5">
+                                <rect key="frame" x="67" y="523" width="241" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="u5g-mo-sLE"/>
+                                </constraints>
+                                <state key="normal" title="I Agree"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="userDidAgree:" destination="roG-zI-w21" eventType="touchUpInside" id="98p-5h-kDC"/>
+                                    <segue destination="a8E-qi-toN" kind="show" id="GjY-V8-0uT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dRV-Y2-IYt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GCx-Ay-XHC" firstAttribute="centerX" secondItem="c15-wP-MK4" secondAttribute="centerX" id="JdJ-Lw-qVn"/>
-                            <constraint firstItem="c15-wP-MK4" firstAttribute="leading" secondItem="dRV-Y2-IYt" secondAttribute="leading" constant="40" id="Ldg-CJ-317"/>
-                            <constraint firstItem="GCx-Ay-XHC" firstAttribute="top" secondItem="dRV-Y2-IYt" secondAttribute="top" constant="165" id="Xy8-mO-f3W"/>
-                            <constraint firstItem="GCx-Ay-XHC" firstAttribute="leading" secondItem="NeQ-Pu-lxg" secondAttribute="leadingMargin" id="aBa-gG-InP"/>
-                            <constraint firstItem="c15-wP-MK4" firstAttribute="top" secondItem="GCx-Ay-XHC" secondAttribute="bottom" constant="61" id="eVI-go-onN"/>
-                            <constraint firstItem="dRV-Y2-IYt" firstAttribute="bottom" secondItem="c15-wP-MK4" secondAttribute="bottom" constant="7" id="kgs-ih-hCi"/>
-                            <constraint firstItem="dRV-Y2-IYt" firstAttribute="trailing" secondItem="c15-wP-MK4" secondAttribute="trailing" constant="40" id="zue-Ge-XJr"/>
+                            <constraint firstItem="B62-TT-aL5" firstAttribute="centerX" secondItem="NeQ-Pu-lxg" secondAttribute="centerX" id="OPt-X0-r0Q"/>
+                            <constraint firstItem="JJx-c6-Njc" firstAttribute="leading" secondItem="dRV-Y2-IYt" secondAttribute="leading" constant="67" id="Sz4-DE-DiB"/>
+                            <constraint firstItem="B62-TT-aL5" firstAttribute="top" secondItem="JJx-c6-Njc" secondAttribute="bottom" constant="20" id="Zo9-0L-o4b"/>
+                            <constraint firstItem="MfV-ch-GMD" firstAttribute="top" secondItem="dRV-Y2-IYt" secondAttribute="top" constant="10" id="lgz-UM-qCh"/>
+                            <constraint firstItem="JJx-c6-Njc" firstAttribute="centerX" secondItem="NeQ-Pu-lxg" secondAttribute="centerX" id="mFX-TI-6dC"/>
+                            <constraint firstItem="JJx-c6-Njc" firstAttribute="leading" secondItem="MfV-ch-GMD" secondAttribute="leading" id="p7U-1y-eWl"/>
+                            <constraint firstItem="JJx-c6-Njc" firstAttribute="top" secondItem="MfV-ch-GMD" secondAttribute="bottom" constant="30" id="rTc-gw-ncc"/>
+                            <constraint firstItem="B62-TT-aL5" firstAttribute="centerX" secondItem="MfV-ch-GMD" secondAttribute="centerX" id="rxU-en-1sF"/>
+                            <constraint firstItem="JJx-c6-Njc" firstAttribute="centerX" secondItem="MfV-ch-GMD" secondAttribute="centerX" id="sXV-lT-BlW"/>
+                            <constraint firstItem="dRV-Y2-IYt" firstAttribute="bottom" secondItem="B62-TT-aL5" secondAttribute="bottom" constant="50" id="sdQ-tr-4pr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rbz-pg-AAB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5QY-o2-F9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3286.875" y="-463.73239436619718"/>
+            <point key="canvasLocation" x="-810.39999999999998" y="-1168.0659670164919"/>
         </scene>
         <!--Device Type View Controller-->
         <scene sceneID="hG4-u0-2b4">
             <objects>
                 <viewController storyboardIdentifier="deviceTypeVC" id="WsS-sm-15H" customClass="DeviceTypeViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVM-h5-eZY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwL-tX-yWr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elJ-0I-jBM">
-                                        <rect key="frame" x="16" y="12" width="50" height="50"/>
+                                        <rect key="frame" x="16" y="22.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="6kR-df-NSI"/>
                                             <constraint firstAttribute="height" constant="50" id="qUP-0H-HfK"/>
@@ -985,13 +1102,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Type" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGl-K5-xCo">
-                                        <rect key="frame" x="115.5" y="27.5" width="89" height="19.5"/>
+                                        <rect key="frame" x="143" y="38" width="89" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMs-wO-nfe">
-                                        <rect key="frame" x="244" y="17" width="60" height="40"/>
+                                        <rect key="frame" x="299" y="27.5" width="60" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="aDJ-au-2gh"/>
                                             <constraint firstAttribute="height" constant="40" id="k1c-6L-pzG"/>
@@ -1026,7 +1143,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoc-wi-m2W">
-                                <rect key="frame" x="32" y="462" width="256" height="56"/>
+                                <rect key="frame" x="32" y="561" width="311" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Zg2-HY-wKI"/>
@@ -1055,7 +1172,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-Sn-jCt">
-                                <rect key="frame" x="32" y="376" width="256" height="56"/>
+                                <rect key="frame" x="32" y="475" width="311" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="MUh-7i-5dL"/>
@@ -1084,7 +1201,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Device Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmp-y7-9OG">
-                                <rect key="frame" x="78" y="249.5" width="164" height="69.5"/>
+                                <rect key="frame" x="78" y="299" width="219" height="69.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1119,14 +1236,14 @@
             <objects>
                 <viewController storyboardIdentifier="bleLandingVC" modalPresentationStyle="fullScreen" id="Q89-K5-hj9" customClass="BLELandingViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyk-A8-c7B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3C-ll-cQF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-jD-jqT">
-                                        <rect key="frame" x="16" y="12" width="50" height="50"/>
+                                        <rect key="frame" x="16" y="22.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="RSt-qB-nNG"/>
                                             <constraint firstAttribute="width" constant="50" id="sPL-Lg-CB0"/>
@@ -1140,13 +1257,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLE Devices" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nm-iW-hin">
-                                        <rect key="frame" x="113.5" y="27.5" width="93" height="19.5"/>
+                                        <rect key="frame" x="141" y="38" width="93" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtn-7m-3BE">
-                                        <rect key="frame" x="244" y="17" width="60" height="40"/>
+                                        <rect key="frame" x="299" y="27.5" width="60" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="eVu-P0-8h5"/>
                                             <constraint firstAttribute="height" constant="40" id="hXH-qV-gd7"/>
@@ -1181,10 +1298,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czd-nJ-6io">
-                                <rect key="frame" x="0.0" y="61" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="71.5" width="375" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-VV-Juo">
-                                        <rect key="frame" x="84" y="2" width="236" height="36"/>
+                                        <rect key="frame" x="84" y="2" width="291" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1222,22 +1339,21 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-7Y-yDE">
-                                <rect key="frame" x="16" y="113" width="288" height="101.5"/>
-                                <string key="text">To provision your new device, please make sure that your phone's Bluetooth is turned on and within range of your new device. 
-</string>
+                                <rect key="frame" x="16" y="123.5" width="343" height="101.5"/>
+                                <string key="text">To provision your new device, please make sure that your phone's Bluetooth is turned on and within range of your new device. AirU Bluetooth devices begin with the prefix: AIRU_</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DBF-Fg-Gr6">
-                                <rect key="frame" x="0.0" y="267.5" width="320" height="300.5"/>
+                                <rect key="frame" x="0.0" y="278" width="375" height="389"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bleDeviceCell" rowHeight="70" id="ltH-N5-EqV" customClass="BLEDeviceListViewCell" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ltH-N5-EqV" id="LEG-if-TZX">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-q2-87Z">
@@ -1274,13 +1390,13 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F58-1c-2m7">
-                                <rect key="frame" x="16" y="230.5" width="61" height="21"/>
+                                <rect key="frame" x="16" y="241" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xq-cQ-Fdb">
-                                <rect key="frame" x="279" y="228.5" width="25" height="25"/>
+                                <rect key="frame" x="334" y="239" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="1qL-gn-7Nu"/>
                                     <constraint firstAttribute="height" constant="25" id="8Vr-r8-GvJ"/>
@@ -1332,20 +1448,20 @@
             <objects>
                 <viewController storyboardIdentifier="claimVC" id="age-Jc-xiO" customClass="ClaimViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgk-SX-0IC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cn-a3-O0d">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proof of Possession" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rl-ER-LJ5" customClass="BarTitle" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="85" y="27.5" width="150" height="19.5"/>
+                                        <rect key="frame" x="112.5" y="38" width="150" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPm-Mo-4Ka" customClass="BarButton" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="244" y="17" width="60" height="40"/>
+                                        <rect key="frame" x="299" y="27.5" width="60" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="FXS-qq-O5B"/>
                                             <constraint firstAttribute="width" constant="60" id="HHR-Dl-p9Q"/>
@@ -1378,7 +1494,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abcd1234" borderStyle="roundedRect" placeholder="abcd1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-ok-0z8">
-                                <rect key="frame" x="32" y="142.5" width="256" height="60"/>
+                                <rect key="frame" x="32" y="153" width="311" height="60"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="IvG-wy-ZqI"/>
@@ -1388,13 +1504,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensure the Proof of Possesion PIN below is abcd1234 and click Next" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-rv-E0e">
-                                <rect key="frame" x="32" y="93" width="236" height="33.5"/>
+                                <rect key="frame" x="32" y="103.5" width="291" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBQ-3S-zjR">
-                                <rect key="frame" x="32" y="218.5" width="256" height="56"/>
+                                <rect key="frame" x="32" y="229" width="311" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="5Qi-bR-csw"/>
@@ -1456,14 +1572,14 @@
             <objects>
                 <viewController storyboardIdentifier="softAPLandingVC" title="Espressif" modalPresentationStyle="fullScreen" id="IxS-fg-9bb" customClass="SoftAPLandingViewController" customModule="ESP_PROV_SAMPLE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YFa-OP-gFt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rid-6D-3Cq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sah-Fp-bhB" customClass="BarButton" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="12" width="50" height="50"/>
+                                        <rect key="frame" x="16" y="22.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="AKb-xR-xqM"/>
                                             <constraint firstAttribute="height" constant="50" id="eI4-gb-83U"/>
@@ -1477,13 +1593,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to Device" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hL-TT-618" customClass="BarTitle" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="91" y="27.5" width="138.5" height="19.5"/>
+                                        <rect key="frame" x="118.5" y="38" width="138.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxG-B8-7SE" customClass="BarButton" customModule="ESP_PROV_SAMPLE" customModuleProvider="target">
-                                        <rect key="frame" x="244" y="17" width="60" height="40"/>
+                                        <rect key="frame" x="299" y="27.5" width="60" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="SfB-3c-uct"/>
                                             <constraint firstAttribute="width" constant="60" id="rwW-rI-ZhP"/>
@@ -1518,7 +1634,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic1-xP-flS">
-                                <rect key="frame" x="32" y="302.5" width="256" height="84"/>
+                                <rect key="frame" x="32" y="352" width="311" height="67"/>
                                 <string key="text">To provision your device: make sure it is turned ON.
 Connect your mobile phone to the Wi-Fi network with a name like AIRU_XXXXXX</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1526,20 +1642,20 @@ Connect your mobile phone to the Wi-Fi network with a name like AIRU_XXXXXX</str
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="provision_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hBs-Or-LeU">
-                                <rect key="frame" x="110" y="157.5" width="100" height="92"/>
+                                <rect key="frame" x="137.5" y="207" width="100" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="UbY-i7-sjZ"/>
                                     <constraint firstAttribute="width" constant="100" id="bBe-2X-4Uj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect your device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-We-IDL">
-                                <rect key="frame" x="77" y="273.5" width="166" height="21"/>
+                                <rect key="frame" x="104.5" y="323" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHw-Re-BjR">
-                                <rect key="frame" x="32" y="426.5" width="256" height="56"/>
+                                <rect key="frame" x="32" y="459" width="311" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="lbD-Kx-ZAu"/>

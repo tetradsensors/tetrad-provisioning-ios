@@ -40,7 +40,9 @@ class ClaimViewController: UIViewController {
     // On click of cancel button, terminate the provisioning and go to first screen.
     @IBAction func cancelClicked(_: Any) {
         espDevice.disconnect()
-        navigationController?.popToRootViewController(animated: true)
+//        navigationController?.popToRootViewController(animated: true)
+        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "mainVC") as! ViewController
+        navigationController?.pushViewController(mainVC, animated: true)
     }
 
     // On click of next button, establish session with device using connect API.

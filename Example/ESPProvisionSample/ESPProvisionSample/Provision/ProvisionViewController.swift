@@ -80,7 +80,9 @@ class ProvisionViewController: UIViewController {
     // Cancel current device provisioning
     @IBAction func cancelClicked(_: Any) {
         espDevice.disconnect()
-        navigationController?.popToRootViewController(animated: false)
+//        navigationController?.popToRootViewController(animated: false)
+        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "mainVC") as! ViewController
+        navigationController?.pushViewController(mainVC, animated: true)
     }
     
     @IBAction func provisionButtonClicked(_: Any) {

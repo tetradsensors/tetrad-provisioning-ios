@@ -25,10 +25,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var centerImage: UIImageView!
     @IBOutlet weak var appVersionLabel: UILabel!
     @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var provisionDeviceButton: UIButton!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         navigationController?.setNavigationBarHidden(true, animated: false)
         appVersionLabel.text = "App Version - v" + appVersion + " (\(espGitVersion))"
+        provisionDeviceButton.isEnabled = true
+        provisionDeviceButton.isHidden = false
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,18 +56,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addNewDevice(_ sender: Any) {
+        
+        print("button pressed")
+        
         if Utility.shared.espAppSettings.appAllowsQrCodeScan {
+            print("a")
             let scannerVC = self.storyboard?.instantiateViewController(withIdentifier: "scannerVC") as! ScannerViewController
             navigationController?.pushViewController(scannerVC, animated: false)
         } else {
             switch Utility.shared.espAppSettings.deviceType {
             case .both:
+                print("c")
                 let deviceTypeVC = self.storyboard?.instantiateViewController(withIdentifier: "deviceTypeVC") as! DeviceTypeViewController
                 navigationController?.pushViewController(deviceTypeVC, animated: false)
             case .ble:
                 let bleLandingVC = self.storyboard?.instantiateViewController(withIdentifier: "bleLandingVC") as! BLELandingViewController
                 navigationController?.pushViewController(bleLandingVC, animated: false)
+                if (navigationController == nil){
+                    print("nav is nil")
+                }
+                
             case .softAp:
+                print("e")
                 let softAPLandingVC = self.storyboard?.instantiateViewController(withIdentifier: "softAPLandingVC") as! SoftAPLandingViewController
                 navigationController?.pushViewController(softAPLandingVC, animated: false)
             }

@@ -91,7 +91,9 @@ class BLELandingViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+//        navigationController?.popToRootViewController(animated: true)
+        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "mainVC") as! ViewController
+        navigationController?.pushViewController(mainVC, animated: true)
     }
     
     @IBAction func rescanBLEDevices(_: Any) {

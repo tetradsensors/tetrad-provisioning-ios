@@ -33,6 +33,10 @@
 		82B6B8B9259D680C001CB627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19AEBA92498E66F0078E5A1 /* LaunchScreen.storyboard */; };
 		82B6B8BA259D680C001CB627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19AEBA72498E66F0078E5A1 /* Assets.xcassets */; };
 		82B6B8BB259D680C001CB627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19AEBA42498E66A0078E5A1 /* Main.storyboard */; };
+		82DD9AEB25AEAB9A003A42EB /* eula-popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD9AEA25AEAB9A003A42EB /* eula-popup.swift */; };
+		82DD9AEC25AEAB9A003A42EB /* eula-popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD9AEA25AEAB9A003A42EB /* eula-popup.swift */; };
+		82DD9AF225AEAFD1003A42EB /* EULAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD9AF125AEAFD1003A42EB /* EULAViewController.swift */; };
+		82DD9AF325AEAFD1003A42EB /* EULAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD9AF125AEAFD1003A42EB /* EULAViewController.swift */; };
 		F19AEB9F2498E66A0078E5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AEB9E2498E66A0078E5A1 /* AppDelegate.swift */; };
 		F19AEBA12498E66A0078E5A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AEBA02498E66A0078E5A1 /* SceneDelegate.swift */; };
 		F19AEBA32498E66A0078E5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AEBA22498E66A0078E5A1 /* ViewController.swift */; };
@@ -96,6 +100,8 @@
 		82B6B888259D668B001CB627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82B6B8C3259D680C001CB627 /* Tetrad Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tetrad Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B6B8CB259D680C001CB627 /* ESPProvisionSample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ESPProvisionSample copy-Info.plist"; path = "/Users/tombo/uu/TBECNEL/Tetrad/esp-idf-provisioning-ios/Example/ESPProvisionSample/ESPProvisionSample copy-Info.plist"; sourceTree = "<absolute>"; };
+		82DD9AEA25AEAB9A003A42EB /* eula-popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "eula-popup.swift"; sourceTree = "<group>"; };
+		82DD9AF125AEAFD1003A42EB /* EULAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EULAViewController.swift; sourceTree = "<group>"; };
 		941D95E11C1021471C746BFB /* Pods-ESPProvisionSample-ESPProvisionSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESPProvisionSample-ESPProvisionSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ESPProvisionSample-ESPProvisionSampleUITests/Pods-ESPProvisionSample-ESPProvisionSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A600497E31230F4B3C5197C8 /* Pods-ESPProvisionSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESPProvisionSample.release.xcconfig"; path = "Target Support Files/Pods-ESPProvisionSample/Pods-ESPProvisionSample.release.xcconfig"; sourceTree = "<group>"; };
 		B36C550D24F7A5870D2A8184 /* Pods-ESPProvisionSample.softap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESPProvisionSample.softap.xcconfig"; path = "Target Support Files/Pods-ESPProvisionSample/Pods-ESPProvisionSample.softap.xcconfig"; sourceTree = "<group>"; };
@@ -278,6 +284,8 @@
 				F19AEB9E2498E66A0078E5A1 /* AppDelegate.swift */,
 				F19AEBA02498E66A0078E5A1 /* SceneDelegate.swift */,
 				F19AEBA22498E66A0078E5A1 /* ViewController.swift */,
+				82DD9AF125AEAFD1003A42EB /* EULAViewController.swift */,
+				82DD9AEA25AEAB9A003A42EB /* eula-popup.swift */,
 				F19AEBA42498E66A0078E5A1 /* Main.storyboard */,
 				F19AEBA72498E66F0078E5A1 /* Assets.xcassets */,
 				F19AEBA92498E66F0078E5A1 /* LaunchScreen.storyboard */,
@@ -693,6 +701,7 @@
 				82B6B8A6259D680C001CB627 /* StatusViewController.swift in Sources */,
 				82B6B8A7259D680C001CB627 /* BLEDeviceListViewCell.swift in Sources */,
 				82B6B8A8259D680C001CB627 /* ESPAppSettings.swift in Sources */,
+				82DD9AF325AEAFD1003A42EB /* EULAViewController.swift in Sources */,
 				82B6B8A9259D680C001CB627 /* Utility.swift in Sources */,
 				82B6B8AA259D680C001CB627 /* GitVersion.swift in Sources */,
 				82B6B8AB259D680C001CB627 /* ScannerViewController.swift in Sources */,
@@ -706,6 +715,7 @@
 				82B6B8B2259D680C001CB627 /* SoftAPLandingViewController.swift in Sources */,
 				82B6B8B3259D680C001CB627 /* ProvisionViewController.swift in Sources */,
 				82B6B8B4259D680C001CB627 /* WifiListTableViewCell.swift in Sources */,
+				82DD9AEC25AEAB9A003A42EB /* eula-popup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +727,7 @@
 				F19AEBD7249BAB4D0078E5A1 /* StatusViewController.swift in Sources */,
 				F19AEBDF249FE1310078E5A1 /* BLEDeviceListViewCell.swift in Sources */,
 				F1A3DBCC24A1072E005AF0ED /* ESPAppSettings.swift in Sources */,
+				82DD9AF225AEAFD1003A42EB /* EULAViewController.swift in Sources */,
 				F19AEBD1249A13D70078E5A1 /* Utility.swift in Sources */,
 				F1A0A47A24A29C9900CB347C /* GitVersion.swift in Sources */,
 				F19AEBD3249B92700078E5A1 /* ScannerViewController.swift in Sources */,
@@ -730,6 +741,7 @@
 				F1A0A47424A27E5000CB347C /* SoftAPLandingViewController.swift in Sources */,
 				F19AEBD5249B94540078E5A1 /* ProvisionViewController.swift in Sources */,
 				F19AEBD9249FD0D50078E5A1 /* WifiListTableViewCell.swift in Sources */,
+				82DD9AEB25AEAB9A003A42EB /* eula-popup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,7 +806,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -807,7 +819,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connectdebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -826,7 +838,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -839,7 +851,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -858,7 +870,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -871,7 +883,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connectsoftap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -890,7 +902,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -903,7 +915,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connectble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1040,7 +1052,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -1053,7 +1065,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.5;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.provdebug;
 				PRODUCT_NAME = "ESP PROV SAMPLE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1072,7 +1084,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -1085,7 +1097,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.5;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.provrelease;
 				PRODUCT_NAME = "ESP PROV SAMPLE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1248,7 +1260,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -1261,7 +1273,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.5;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.provble;
 				PRODUCT_NAME = "ESP PROV SAMPLE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1380,7 +1392,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -1393,7 +1405,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.5;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.provsoftap;
 				PRODUCT_NAME = "ESP PROV SAMPLE";
 				PROVISIONING_PROFILE_SPECIFIER = "";
