@@ -806,7 +806,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -819,7 +819,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connectdebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -838,7 +838,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -851,7 +851,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -870,7 +870,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -883,7 +883,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connectsoftap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -902,7 +902,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ESPProvisionSample/ESP BLE PROV.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YB8U5S3H3H;
 				ESP_ALLOW_PREFIX_SEARCH = YES;
 				ESP_ALLOW_QR_CODE_SCAN = NO;
@@ -915,7 +915,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetrad.connectble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
